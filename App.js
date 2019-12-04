@@ -1,12 +1,16 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet,ScrollView,Image,Text, View } from "react-native";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Hey pranavi!</Text>
-    </View>
-  );
+
+class MainScreen extends React.Component{
+  render(){
+    return(
+      <ScrollView>
+        <T
+      </ScrollView>
+    );
+  }
+
 }
 
 const styles = StyleSheet.create({
