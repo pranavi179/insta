@@ -1,7 +1,7 @@
 // image should be shown as a modal
 import React, { Component } from "react";
 import { Modal, Text, TouchableHighlight, View, Alert } from "react-native";
-
+import Images from "./image";
 export default class Imageview extends Component {
   state = {
     modalVisible: false
@@ -15,23 +15,25 @@ export default class Imageview extends Component {
     return (
       <View style={{ marginTop: 22 }}>
         <Modal
-          animationType="slide"
+          animationType="fade"
           transparent={false}
           visible={this.state.modalVisible}
           onRequestClose={() => {
-            Alert.alert("Modal has been closed.");
+            Alert.alert("Image  has been closed.");
           }}
         >
           <View style={{ marginTop: 22 }}>
             <View>
-              <Text>Pranavi</Text>
+              {/* <Text>Pranavi</Text> */}
+              {/* <Images /> */}
 
               <TouchableHighlight
                 onPress={() => {
                   this.setModalVisible(!this.state.modalVisible);
                 }}
               >
-                <Text> To Hide Modal </Text>
+                <Images />
+                <Text> To Hide Image </Text>
               </TouchableHighlight>
             </View>
           </View>

@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import { View } from "react-native";
+// import React, { Component } from "react";
+// import { View, Text } from "react-native";
+// import { createAppContainer, createBottomTabNavigator } from "react-navigation";
 
-class footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  render() {
-    return (
-      <View style={{ flex: 3 }}>
-        <View style={{ flex: 3, backgroundColor: "powderblue" }} />
-      </View>
-    );
-  }
-}
+// class FooterBar extends Component {
+//   render() {
+//     return (
+//       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+//         <Text>Its a Insta homescreen</Text>
+//       </View>
+//     );
+//   }
+// }
 
-export default footer;
+// const TabNavigator = createBottomTabNavigator({
+//   Footer: { screen: FooterBar }
+// });
+// export default createAppContainer(TabNavigator);
